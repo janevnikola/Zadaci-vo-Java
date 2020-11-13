@@ -24,13 +24,13 @@ sortiranjeParicki(paricki,n); //pravime sortiranje
 int vkupno_paricki=0;
 int i=0; //brojac
 while(suma >0){
-    broj_paricki[i]=suma/paricki[i];//broj_paricki[j] ke se stavi sumata / paricki [i]
-    suma-=broj_paricki[i]*paricki[i];
-    vkupno_paricki+=broj_paricki[i];
-    i++;
+    broj_paricki[i]=suma/paricki[i];//na primer 80/10 paricka= broj paricki=8
+    suma-=broj_paricki[i]*paricki[i];//8*10-80=0
+    vkupno_paricki+=broj_paricki[i];//tuka ke se smesti 8 t.e 8 paricki od 10
+    i++;//itn
 }
 while(i<n){
-    broj_paricki[i]=0;
+    broj_paricki[i]=0;//ostanatite vrednosti so ne se upotrebeni na 0
     i++;
 }
 
