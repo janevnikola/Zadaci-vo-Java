@@ -23,7 +23,7 @@ if(paricki[i]<paricki[j]){
 sortiranjeParicki(paricki,n); //pravime sortiranje
 int vkupno_paricki=0;
 int i=0; //brojac
-while(broj_paricki[i] >n){
+while(suma >0){
     broj_paricki[i]=suma/paricki[i];//broj_paricki[j] ke se stavi sumata / paricki [i]
     suma-=broj_paricki[i]*paricki[i];
     vkupno_paricki+=broj_paricki[i];
